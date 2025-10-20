@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти-email</title>
+    <link rel="stylesheet" href="Email.css">
+    <link rel="icon" href="img/user-solid-full.svg">
+</head>
+<body>
+    <h1 class="align">Войти</h1>
+
+    <div for="email" class="align">Email</div>
+        <div class="block">  
+        <input type="email" id="email" name="email">
+        <div class="error" id="emailError"></div></div>
+        
+        <div for="password" class="align">Пароль</div>
+    <div class="block">
+        <input type="password" id="password" name="password">
+        <div class="error" id="passwordError"></div></div>
+
+        <div for="repassword" class="align">Повторите пароль</div>
+    <div class="block">
+        <input type="password" id="repassword" name="repassword">
+        <div class="error" id="repasswordError"></div></div>
+
+    <div class="block">
+        <button type="submit">Подвердит</button>
+        <div class="success" id="successMessage">
+        </div></div>
+
+
+        <details style="color: aliceblue; cursor: pointer; margin-top: 50px;">
+        <summary>Подробнее</summary>
+        <li>Логин не должен содержать символы "@#$%"</li>
+        <li>Задайте правильно свой логин чтобы не было ошибок!!!</li>
+        <li>Всегда проверте!!!</li>
+        <li>Если зокончили можете нажатьь на 'Подвердит' и зайти в свой email. </li>
+    </details>
+
+
+    <script src="Email.js"></script>
+</body>
+</html>
